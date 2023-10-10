@@ -1,4 +1,5 @@
 import question_a
+print("We will determine whether you're an Infant, Child, Teenager, or Adult from ages 0-125")
 try_again = 'y'
 while try_again == 'y' or try_again == 'Y' or try_again == 'yes' or try_again == 'YES':
     while True:
