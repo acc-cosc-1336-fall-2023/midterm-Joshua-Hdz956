@@ -17,28 +17,3 @@ def get_day_of_week(day):
         return("Sunday")
     else:
         return("Invalid")
-
-
-
-def try_again():
-    while True:
-        z = input("Would you like to Try Again? y/n: ")
-        if z == 'y' or z == "Y":
-            run_main()
-            break
-        elif z == 'n' or z == 'N':
-            print("Exiting")
-            break
-        else:
-            print("Invalid, Select Y or N")
-
-def run_main():
-    while True:
-        try:
-            day = int(input("Enter a Number of 1-7 for the day: "))
-            break
-        except ValueError:
-            print("Not a WHOLE Number")
-    y= get_day_of_week(day)
-    print(y)
-    try_again()
