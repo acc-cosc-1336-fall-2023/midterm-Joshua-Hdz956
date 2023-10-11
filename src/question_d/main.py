@@ -10,7 +10,7 @@ while try_again == 'y' or try_again == 'Y' or try_again == 'yes' or try_again ==
             print("Not a WHOLE Number")
     z = question_d.get_day_of_week(day)
     print (z)
-    try_again = str(input("Enter 'Yes' or 'Y' if you would like to Try Again: "))
+    try_again = str(input("Enter 'Yes' or 'Y' if you would like to Try Again. Otherwise enter any other input to exit: "))
     if try_again == 'y' or try_again == 'Y' or try_again == 'YES' or try_again == 'yes':
         print("\nYou selected to try again!")
     else:
