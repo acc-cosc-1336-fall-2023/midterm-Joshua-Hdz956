@@ -18,5 +18,5 @@ while True:
             break
         else:
             print("Invalid, Select Y or N")
-    if y == 'n' or y == 'N':
+    if y == 'n' or y == 'N' or y =='NO' or y=='no':
         break
