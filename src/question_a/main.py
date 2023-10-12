@@ -1,7 +1,6 @@
 import question_a
-print("We will determine whether you're an Infant, Child, Teenager, or Adult from ages 0-125")
-try_again = 'y'
-while try_again == 'y' or try_again == 'Y' or try_again == 'yes' or try_again == 'YES':
+print("We will determine whether you're an Infant, Child, Teenager, or Adult")
+while True:
     while True:
         try:
             age = int(input("Enter Your Age: "))
@@ -9,10 +8,15 @@ while try_again == 'y' or try_again == 'Y' or try_again == 'yes' or try_again ==
         except ValueError:
             print("NOT a whole number!")
     z = question_a.get_person_category(age)
-    print (z)
-    try_again = str(input("Enter 'Yes' or 'Y' if you would like to Try Again. Otherwise enter any other input to exit: "))
-    if try_again == 'y' or try_again == 'Y' or try_again == 'YES' or try_again == 'yes':
-        print("\nYou selected to try again!")
-    else:
-        print("Exiting Program")
-            
+    print(z)
+    while True:
+        y = input("Would you like to Try Again? y/n: ")
+        if y == 'y' or y == "Y" or y == 'YES' or y =="yes":
+            break
+        elif y == 'n' or y == 'N' or y == 'NO' or y == 'no':
+            print("Exiting")
+            break
+        else:
+            print("Invalid, Select Y or N")
+    if y == 'n' or y == 'N':
+        break
